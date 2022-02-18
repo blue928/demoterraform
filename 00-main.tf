@@ -29,10 +29,10 @@ terraform {
   # Setup terraform to use Azure storage bucket
   # to store terraform.tfstate files. 
   backend "azurerm" {
-    #subscription_id      = "0bfe77a8-517e-450b-a955-92f03bb4c40c"
-    resource_group_name  = "DEV-Lift_Stihl-Dev_CentralUS"
-    storage_account_name = "stihldevliftstac"
-    container_name       = "stihldevlifttfstate"
-    key                  = "stihldevlift.tfstate"
+    
+    resource_group_name  = "demoterraform"
+    storage_account_name = "demoterraformstac"
+    container_name       = "demoterraformtfstate"
+    key                  = "demoterraform.tfstate"
   }
 }

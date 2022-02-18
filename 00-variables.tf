@@ -111,7 +111,7 @@ variable "cluster_qa_namespace" {
 # 04-container-insights.tf 
 #################################################
 variable "log_analytics_workspace_name" {
-  default = "stihldevliftLogAnalyticsWorkspace"
+  default = "demoterraformLogAnalyticsWorkspace"
 }
 
 # refer https://azure.microsoft.com/global-infrastructure/services/?products=monitor for log analytics available regions
@@ -129,7 +129,7 @@ variable "log_analytics_workspace_sku" {
 # 05-mysql-flexible-server.tf 
 #################################################
 variable "fs_db_server_name" {
-  default = "stihldevlift-fs-db-server"
+  default = "demoterraform-fs-db-server"
 }
 
 variable "fs_db_server_sku_name" {
@@ -152,7 +152,7 @@ variable "fs_fw_end_ip_address" {
 }
 
 variable "fs_db_server_administrator_login" {
-  default = "stihldevliftadmin"
+  default = "demoterraformadmin"
 }
 
 variable "fs_db_server_administrator_password" {
@@ -165,17 +165,17 @@ variable "fs_db_server_backup_retention_days" {
 
 # Database names
 variable "fs_db_server_prod_db_name" {
-  default = "stihldevliftproddb"
+  default = "demoterraformproddb"
 }
 
 ## staging and dev dbs are no longer necessary, but adding
 ## in case there may be a use case I haven't figured out.
 variable "fs_db_server_staging_db_name" {
-  default = "stihldevliftstagingdb"
+  default = "demoterraformstagingdb"
 }
 
 variable "fs_db_server_dev_db_name" {
-  default = "stihldevliftdevdb"
+  default = "demoterraformdevdb"
 }
 
 #################################################
@@ -183,7 +183,7 @@ variable "fs_db_server_dev_db_name" {
 # 06-azure-container-registry.tf 
 #################################################
 variable "acr_name" {
-  default     = "stihldevliftacrtest"
+  default     = "demoterraformacrtest"
   description = "The name of the ACR registry. Note: This MUST be unique across the whole of Azure"
 }
 
@@ -210,7 +210,7 @@ variable "azure_dns_domain" {
 }
 
 variable "externaldns_to_dns_sp_name" {
-  default = "stihldevliftSpConnectToDNS"
+  default = "demoterraformSpConnectToDNS"
 }
 
 
